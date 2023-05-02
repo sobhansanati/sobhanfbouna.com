@@ -1,0 +1,125 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/noscript.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+    <title>Philosophy</title>
+</head>
+<body>
+    <header>
+    <div class="menu">
+        
+        <i></i><h3 class="cmenu">SobhanFbouna</h3>
+
+        <ul class="dokme">
+           <a href="{% url 'Home:Home_p' %}"> <li class="">Home</li></a>
+           <a href="#"> <li class="">Philosophy</li> </a>
+           <a href="{% url 'Humanity:socio' %}"> <li class="">Sociology</li> </a>
+        </ul>
+    </div>
+    </header>
+    <main class="main">
+    <div>
+        <p class="p1 p2">published Mar 15, 2023</p>
+        <h1 class="p1">Philosophy</h1>
+        <h1 class="p1">Monism</h1>
+        <br>
+        <img src="{% static 'images/Monad.png' %}" id="mo-picture">
+        <br>
+        <br>
+        <p>
+        <ul>
+            <li>Monism is a Philosophical point of view</li>
+            <li>tell everything that exsist in this unvirse came from one thing(god)</li> 
+            <li>existence monism posits that, strictly speaking there exists only a single thing, the universe, which can only be artificially and arbitrarily divided into many 
+            things. </li>
+            <li>monism asserts that a variety of existing things can be explained in terms of a single reality or substance</li> 
+        </ul>
+        </p>
+        <br>
+        <ul>
+            <li class="mainlinks">Pantheism</li>
+            <li class="mainlinks">Idealism</li>
+            <li class="mainlinks">Dualism</li>
+            <li class="mainlinks">Pluralism</li>
+    </div>
+    <br>
+    <br>
+    <h2>History of monism</h2>
+    <p>
+        <strong> Christian Wolff </strong>
+        <br>
+        <img src="{% static 'images/Christian_Wolff.jpg' %}" id="mo-picture">
+        <br>
+        the idea of monism came from a german philosopher who is born in 24 jan of 1679 in the Breslau 
+        the term of monism was introduced in the 18th century by him in his work logic to designate types of philosophical thought in which the attempt was made to eliminate the dichotomy of body and mind and explain all phenomena by one unifying principle, or as manifestations of a single substance
+
+    </p>
+    <p class="sobhan">
+    </br>
+        <strong>My opinion : </strong>
+    </br>
+</br>
+</br>
+        In many cases, monism or monotheism can give a valuable meaning, but from my personal point of view, all the parts that exist in this world are the result of the relationship of several elements with each other.
+        Personally, I agree with pluralism, of course, our world does not have absolute order And we have troubles and evils in this world
+        If we had absolute order, all the elements that we see around us would proceed according to a process. For example, why should some people who have the power of wealth and worldly knowledge cause all the events on the planet in a world where we have order? This is a type of evil in itself, or let's use material as an example,
+        this is not absolute and can be variable. It can easily be said that 80% of the proof for the absolute negation of the earth is that if a stone accidentally or by my own hand If it is placed in the middle of the desert,
+        it is not based on the absolute order, although it can be a part of the order
+    </p>
+</main>
+<!-- Footer -->
+<div class="footer">
+<section class="wrapper style1 align-center">
+    <div class="inner medium">
+      <h2>Get in touch</h2>
+      <form method="post" action="{% url 'Home:contact_page' %}">
+       {% csrf_token %}
+        <div class="fields">
+          <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="" />
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6"></textarea>
+          </div>
+        </div>
+        <ul class="actions special">
+          <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+        </ul>
+      </form>
+
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="wrapper style1 align-center">
+    <div class="inner">
+         <div class="inner">
+              <ul class="icons">
+                <li><a href="https://twitter.com/sobhanfbouna"  target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/sobhansanati" target="_blank" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sobhan-sanati-48b02b237/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="fbounaprograming@gmail.com" target="_blank" class="icon style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                <li><a href="https://www.kaggle.com/sobhansanati" target="_blank" class="icon brands style2 fa-kaggle"><span class="label">kaggle</span></a></li>
+              </ul>
+              <p>&copy; 2023 : <a href="https://Sobhanfbouna.com">sobhanfbouna</a>.</p>
+        </div>
+</div>
+
+</div>
+</body>
+</html>

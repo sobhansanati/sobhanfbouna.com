@@ -1,0 +1,123 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main2.css' %}">
+  <link rel="stylesheet" href="{% static 'css/noscript.css' %}">
+  <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+    <title>Sociology</title>
+</head>
+<body>
+    <header>
+    <div class="menu">
+        
+        <i></i><h3 class="cmenu">SobhanFbouna</h3>
+
+        <ul class="dokme">
+           <a href="{% url 'Home:Home_p' %}"> <li class="">Home</li></a>
+           <a href="{% url 'Humanity:Philosophy_1' %}"> <li class="">Philosophy</li> </a>
+           <a href="#"> <li class="">Sociology</li> </a>
+        </ul>
+    </div>
+    </header>
+    <main class="main">
+    <div>
+        <p class="p1 p2">published Mar 15, 2023</p>
+        <h1 class="p1">Sociology</h1>
+        <h1 class="p1">nationalisim</h1>
+        <br>
+        <img src="{% static 'images/NationalismIcon.png' %}" id="meli-picture">
+        <br>
+        <p>
+        <ul>
+            <li>Nationalism is an idea and movement that holds that the nation should be congruent with the state.</li>
+            <li>As a movement, it tends to promote the interests of a particular nation (as in a group of people)</li> 
+            <li>especially with the aim of gaining and maintaining the nation's sovereignty (self-governance) over its homeland to create a nation-state. It holds that each nation should govern itself, free from outside interference (self-determination), that a nation is a natural and ideal basis for a polity. </li>
+            <li>and that the nation is the only rightful source of political power. It further aims to build and maintain a single national identity, based on a combination of shared social characteristics such as culture, ethnicity, geographic location, language, politics (or the government), religion, traditions and belief in a shared singular history</li> 
+        </ul>
+        </p>
+        <br>
+        <ul>
+            <li class="mainlinks">national-democracy</li>
+            <li class="mainlinks">national-socialisim(Nazism)</li>
+            <li class="mainlinks">socialisim</li>
+            <li class="mainlinks">democracy</li>
+    </div>
+    <br>
+    <br>
+    <h2>History of nationalisim (wikipedia)</h2>
+    <p>
+        <strong> Jean-Jacques Rousseau / Charles-Louis </strong>
+        <br>
+        <img src="{% static 'images/220px-Jean-Jacques_Rousseau_(painted_portrait).jpg' %}" id="mo-picture">
+        <img src="{% static 'images/220px-Montesquieu_1.png' %}" id="mo-picture" />
+        <br>
+        Scholars frequently place the beginning of nationalism in the late 18th century or early 19th century with the American Declaration of Independence or with the French Revolution
+        The consensus is that nationalism as a concept was firmly established by the 19th century
+        n histories of nationalism, the French Revolution (1789) is seen as an important starting point, not only for its impact on French nationalism but even more for its impact on Germans and Italians and on European intellectuals
+        The template of nationalism, as a method for mobilizing public opinion around a new state based on popular sovereignty, went back further than 1789: philosophers such as Rousseau and Voltaire, whose ideas influenced the French Revolution, had themselves been influenced or encouraged by the example of earlier constitutionalist liberation movements, notably the Corsican Republic (1755–1768) and American Revolution (1775–1783).
+
+    </p>
+    <p class="sobhan">
+    </br>
+        <strong>My opinion : </strong>
+    </br>
+</br>
+</br>
+nationalisim could be the most useful idea or type of a regim, personally if somebody ask me what is the best type/idea of goverment based on the country ,that is possible i answere (nationalisim) also as i said base on the country ,my country i believe so shall be focuse on nationalisim, if they allowed ,let me tell that we had about 2 years nationalisim by Dr mosadegh in iran some people believe the nationalisim havent any diffrence with socialisim and phashisim but that is not true 
+they are diffrent
+    </p>
+</main>
+<!-- Footer -->
+<div class="footer">
+<section class="wrapper style1 align-center">
+    <div class="inner medium">
+      <h2>Get in touch</h2>
+      <form method="post" action="{% url 'Home:contact_page' %}">
+       {% csrf_token %}
+        <div class="fields">
+          <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="" />
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6"></textarea>
+          </div>
+        </div>
+        <ul class="actions special">
+          <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+        </ul>
+      </form>
+
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="wrapper style1 align-center">
+    <div class="inner">
+         <div class="inner">
+              <ul class="icons">
+                <li><a href="https://twitter.com/sobhanfbouna"  target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/sobhansanati" target="_blank" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sobhan-sanati-48b02b237/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="fbounaprograming@gmail.com" target="_blank" class="icon style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                <li><a href="https://www.kaggle.com/sobhansanati" target="_blank" class="icon brands style2 fa-kaggle"><span class="label">kaggle</span></a></li>
+              </ul>
+              <p>&copy; 2023 : <a href="https://Sobhanfbouna.com">sobhanfbouna</a>.</p>
+        </div>
+</div>
+
+</div>
+</body>
+</html>
